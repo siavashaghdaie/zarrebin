@@ -1,0 +1,29 @@
+{%extends 'podcast/main.html'%}
+{%load static%}
+
+{% block content%}
+<br><br><br><br><br><br>
+    <div class="login_from" >
+        <br>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form method="POST" action="">
+            {%csrf_token%}
+            <label for="">نام کاربری</label>
+            <input type="text" value=""  name="username" id="">
+            <br>
+            <label  for="">رمز عبور</label>
+            <input type="password" value=""  name="password" id="">
+            <br>
+            <input id='submit' type="submit", value="ورود"">
+        </form>
+        <br>
+    </div>
+    <br><br><br><br>
+
+{%endblock content%}

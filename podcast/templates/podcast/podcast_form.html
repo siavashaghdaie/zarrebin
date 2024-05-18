@@ -1,0 +1,55 @@
+{%extends 'podcast/main.html'%}
+{%load static%}
+
+{% block content%}
+<br><br><br><br>
+
+<style>
+    .form-container{
+        position: relative;
+        z-index: 1;
+        background-color: rgba(143, 208, 228,0.6);
+        margin:20px;
+        padding :20px;
+        border-radius: 10px;
+
+    }
+    .form{
+        display:grid;
+        
+    }
+    input{
+        position:relative;
+        display:grid;
+        width:98%;
+    }
+    textarea{
+        position:relative;
+        display:grid;
+        width:98%;
+    }
+    
+
+    
+</style>
+
+
+<div>
+
+    {% if request.user.is_authenticated %}
+
+        <div class="form-container"> 
+            <h1>افزودن پادکست</h1>
+            
+            <form method='POST',action="", id='form', enctype='multipart/form-data'>
+                {%csrf_token%}
+                {{form.as_p}}
+                <input type="submit" name="submit" value="ثبت" id="">
+            </form>
+        </div>
+
+    {% endif %}
+</div>
+
+
+{%endblock content%}

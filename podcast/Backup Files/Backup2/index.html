@@ -1,0 +1,179 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'podcast/css/bootstrap.css'%}" />
+    <link rel="stylesheet" href="{%static 'podcast/css/index.css'%}" />
+  </head>
+
+  <style>
+      @font-face {
+          font-family: IRANSansWebFaNum;
+          src: url("{%static 'podcast/webfonts/IRANSansWebFaNum.ttf'%}");
+      }
+      *{
+          font-family: IRANSansWebFaNum;
+      }
+  </style>
+
+  <body dir="rtl">
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <img class="menu_button" src="{%static 'podcast/images/menu-black.svg'%}" >
+            <img class="menu_close_button" src="{%static 'podcast/images/cross1.png'%}" >
+            <img  class="logo" src="{%static 'podcast/images/logo.jpg'%}">
+
+        </div>
+
+        <div class="mobile_menu">
+
+            <br><br><br>
+
+            <div class="menuitem">
+                آرشیو
+            </div>
+
+            <div class="menuitem">
+                مقالات
+            </div>
+
+            <div class="menuitem">
+                پشتیبانی مالی
+            </div>
+
+            <div class="menuitem">
+                ارتباط با ما
+            </div>
+
+            <div class="menuitem">
+                آشنایی با گروه
+            </div>
+            <div class="menuitem">
+                پیامگیر  
+            </div>
+        </div>
+
+        
+        <img class="wallpaper_sm" src="{%static 'podcast/images/mag01.jpeg'%}" alt="">
+        <img class="wallpaper_md" src="{%static 'podcast/images/mag3.jpeg'%}" alt="">
+        <img class="wallpaper_lg" src="{%static 'podcast/images/mag1.jpeg'%}" alt="">
+
+        <div class="pad">
+        
+        </div>
+
+        <div class="free">
+
+        </div>
+        <div class="last_episode">
+            <img class="new_badge" src="{%static 'podcast/images/new1.png'%}" alt="">
+            <img class="last_episode_image" src="{%static 'podcast/images/zartosht.jpg'%}" alt="">
+            <div id="last_episode_des">
+                <p>
+                    در این اپیزود راجع به زرتشت 
+                    می شنوید، پیامبری که آیین زندگی را بر مبنای کرداد گفتار نیک، 
+                    کردار نیک، و پندار نیک به مردمش آموخت.
+                </p>
+
+                <div id="last_episode_listen">
+                    <h5>بشنوید</h5>
+                </div>
+            </div>
+            
+
+            <iframe class="castbox" src="https://castbox.fm/app/castbox/player/id4497829/id427084790?v=8.22.11&autoplay=1" 
+            frameborder="0" width="100%" height="500"></iframe>
+
+        </div>
+
+
+        <div class="best_episodes">
+            <div id="best_ep_title">
+                <h2>
+                    بهترین اپیزود ها
+                </h2>        
+            </div>
+            <div class="best_ep">
+                <div class="best_ep_des">
+                    <h3>دراکولا</h3>
+                    <h5>در اعماق تاریکی</h5>
+                </div>
+                <img class="best_ep_img" src="{%static 'podcast/images/drakula.jpg'%}" alt="">
+                <img id="best_ep_play_btn" src="{%static 'podcast/images/play.png'%}" alt="">
+            </div>
+
+            <div class="best_ep">
+                <div class="best_ep_des">
+                    <h3>قهوه</h3>
+                    <h5>تلخ آشنا</h5>
+                </div>
+                <img class="best_ep_img" src="{%static 'podcast/images/cofee.jpg'%}" alt="">
+                <img id="best_ep_play_btn" src="{%static 'podcast/images/play.png'%}" alt="">
+            </div>
+            <div class="best_ep">
+                <div class="best_ep_des">
+                    <h3>رستم</h3>
+                    <h5>قهرمان مظلوم ما</h5>
+                </div>
+                <img class="best_ep_img" src="{%static 'podcast/images/rostam.jpg'%}" alt="">
+                <img id="best_ep_play_btn" src="{%static 'podcast/images/play.png'%}" alt="">
+            </div>
+        </div>
+
+        <div class="archive">
+            <div class="archive_title">
+                <h3>ورود به آرشیو</h3>   
+            </div>
+            
+        </div>
+
+        <div class="spons">
+            <img id="spons_img" src="{%static 'podcast/images/don5.jpeg'%}" alt="">
+            <div id="spons_slide_btn">
+                <h2>حمایت مالی</h2>
+            </div>
+        </div>
+       
+        
+        <div class="copy_right">
+            برای شنیدن ذره بین لازم نیست پولی پرداخت کنید. این پادکست
+            رایگانه و همیشه هم رایگان خواهد بود. اما اگر خواستین از حاصل پژوهش های گروه، 
+            یا بخش هایی از برنامه استفاده ی تجاری یا رسانه ای بکنین، 
+            حتما لازمه که قبلش با ما صحبت کنین و اجازه بگیرین.
+        </div>
+
+
+        <div class="contact">
+            <div class="social_med">
+                <img class="sn" src="{%static 'podcast/images/insta.png'%}" alt="">
+                <img class="sn" src="{%static 'podcast/images/twitter.png'%}" alt="">
+                <img class="sn" src="{%static 'podcast/images/whatsapp.png'%}" alt="">
+            </div>
+        </div>
+        
+
+        <div class="footer">
+            Copyright © 2021 ZC Inc. All rights reserved.
+        </div>
+
+        
+
+
+    
+
+    </div>
+
+    
+
+    <script src="{%static 'podcast/js/jquery-3.6.0.min.js'%}"></script>
+    <script src="{%static 'podcast/js/bootstrap.bundle.js'%}"></script>
+    <script src="{%static 'podcast/js/index.js'%}"></script>
+  </body>
+</html>

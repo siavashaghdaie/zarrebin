@@ -1,0 +1,336 @@
+.container{
+    position:absolute;
+    margin:0;
+    padding:0;
+    display: grid;
+}
+
+.navbar{
+    position:fixed;
+    width:100vw;
+    justify-content:space-between;
+    background-color: darkcyan;
+    z-index: 11;
+}
+
+.menu_button{
+    position: relative;
+    width:60px;
+    border: solid rgba(0, 0, 0,0.3);
+    margin:2px;
+    border-radius: 50%;
+    display:block;
+    
+
+}
+
+.menu_close_button{
+    position: relative;
+    width:60px;
+    border: solid rgba(0, 0, 0,0.3);
+    margin:2px;
+    border-radius: 50%;
+    display:none;
+
+}
+
+.logo{
+    position: relative;
+    width:60px;
+    height:auto;
+    border: solid rgba(0, 0, 0,0.3);
+    margin:2px;
+    border-radius: 50%;
+
+
+}
+
+.mobile_menu{
+    position: fixed;
+    background-color: rgba(6, 134, 134, 0.4);
+    backdrop-filter: blur(10px);
+    display:block;
+    visibility: hidden;
+    height: 100vh;
+    width:50vw;
+    z-index: 10;
+   
+    
+    
+    :hover{
+        transition:all .3s;
+        color:rgb(75, 42, 42) ;
+        background-color: burlywood;
+        
+    }
+
+    
+}
+
+.menuitem{
+    padding:10px;
+    text-align: right;
+    position: relative;
+    font-size:x-large;
+    border-bottom: solid black;
+    
+
+}
+
+.wallpaper_sm{
+
+    position: fixed;
+    top:60px;
+    height:92vh;
+    z-index: 0;
+}
+
+.wallpaper_md{
+
+    display: none;
+}
+.wallpaper_lg{
+
+    display: none;
+}
+.pad{
+    position: fixed;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(0, 0, 0,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+    
+}
+    
+
+.free{
+    position: relative;
+    height: 55vh;
+}
+
+.last_episode {
+    position:relative;
+    background-color: rgba(43, 70, 73,0.8);
+    display:grid;
+    justify-content: center;
+    
+    
+    .last_episode_image{
+        border-radius: 4%;
+        padding:5px;
+        position: relative;
+        width:100vw;
+        display:inline-block;
+        
+    }
+    .new_badge{
+        
+        z-index: 2;
+        position: absolute;
+        width: 200px;
+        right:20px;
+        top:-70px;
+    }
+    #last_episode_listen{
+        
+        position: absolute;
+        text-align: center;
+        background-color: lightseagreen;
+        width:30%;
+        left:5px;
+        bottom: 3px;
+        border-radius: 8px;
+       
+    }
+
+    #last_episode_des{
+        position: relative;
+        margin:5px;
+        margin-bottom: 8px;
+        padding: 20px;
+        background-color: rgb(245, 237, 223);
+        border-radius: 10px;
+        text-align: justify;
+        text-justify: initial;
+        height: 15vh;
+        scroll-behavior: auto;
+        
+    }
+}   
+
+.best_episodes {
+    position:relative;
+    background-color: rgba(43, 70, 73,0.8);
+    display:grid;
+    justify-content: center;
+    background-color: tomato;
+    
+
+    #best_ep_title{
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(43, 70, 73,1);
+        border-radius: 10px;
+        font-weight: bolder;
+        color: wheat;
+
+    }
+
+    .best_ep{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin:10px 0;
+        border-radius: 20px;
+        overflow: hidden;
+
+        .best_ep_img{
+            position: relative;
+            width:35vw;
+            z-index: 5;
+        }
+        .best_ep_des{
+            color: wheat;
+            padding: 20px;
+            position:relative;
+            background-color: rgba(20, 34, 36, 0.95);
+            display:grid;
+            justify-content: right;
+            text-align: right;
+            width:55vw;
+        }
+        #best_ep_play_btn{
+            position:absolute;
+            width:20vw;
+            top:23%;
+            left:31%;
+            opacity: 0.8;
+            z-index: 5;
+          
+        }
+    }
+
+
+}
+
+.archive{
+    position:relative;
+    display:grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    .archive_title{
+        color: wheat;
+        text-align: center;
+        position: relative;
+        display:block;
+        margin:30px 10px;
+        padding:5px;
+        width:90vw;
+        background-color: rgb(235, 84, 58);
+        border-radius: 10px;
+
+    }
+}
+
+.spons{
+    position:relative;
+    display:grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    align-content: center;
+   
+    #spons_img{
+        position: relative;
+        width:95vw;
+        padding: 5px;
+        margin-top:30px;
+        margin-bottom: 50px;
+
+    }
+    #spons_slide_btn{
+        
+        color: wheat;
+        padding: 5px;
+        position: absolute;
+        text-align: center;
+        background-color: rgba(35, 61, 65, 0.8);
+        backdrop-filter: blur(5px);
+        font-weight: bolder;
+        border-radius: 10px;
+        bottom: 25px;
+        width:60%;
+        right:20%;
+        border-radius: 510px;
+        
+
+
+    }
+}
+
+
+
+.copy_right{
+    color:white;
+    padding: 20px;
+    position:relative;
+    background-color: rgba(20, 34, 36, 0.95);
+    display:grid;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.footer{
+    position:relative;
+    background-color: rgba(43, 70, 73,0.8);
+    display:grid;
+    justify-content: center;
+}
+
+
+.contact{
+    position: relative;
+    display: grid;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+
+    .social_med{
+        
+        position:relative;
+        display:flex;
+        justify-content: space-between;
+        padding:0 10px;
+        margin:20px ;
+        
+
+
+        .sn{
+            position: relative;
+
+            width:15%;
+            margin:20px, 0;
+        
+        }
+    }
+}
+
+@media only screen and (min-width:768px){
+    .wallpaper_sm{
+        display: none;
+    }
+    .wallpaper_md{
+        display: block;
+        width:100vw;
+        position: fixed
+    }
+    
+    
+}
+
+

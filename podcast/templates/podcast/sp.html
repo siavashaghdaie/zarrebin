@@ -1,0 +1,61 @@
+{%extends 'podcast/main.html'%}
+{%load static%}
+
+
+
+{% block content%}
+
+<style>
+    .team{
+        position: relative;
+        
+        width:80%;
+        right:5%;
+        height:60%;
+        color: wheat;
+        backdrop-filter: blur(5px);
+        padding:20px;
+        border-radius: 10px;
+        text-align: justify;
+        
+    }
+
+    .send-email{
+        position: relative;
+        
+        width: 40%;
+        background-color: rgb(5, 43, 39);
+        color: wheat;
+        padding:10px;
+        border-radius: 10px;
+        right:30%;
+        text-align: center;
+        
+    }
+
+</style>
+<br><br><br><br><br>
+<div class="team" dir='rtl'>
+    <h2>پشتیبانی مالی از ذره‌بین</h2>
+    <h3>
+        <p>
+            چنانچه خدمات یا محصولات شما با خط مشی ذره‌بین متناسب باشد، این پادکست پخش تبلیغات شما را می پذیرد.
+            این تبلیغات می تواند از طریق تهیه و پخش آنونس ها، و یا تولید اپیزود های ویژه ی محصولات یا
+            خدمات شما باشد. شکل دوم تبلیغات در شرایطی ممکن است که آنچه قصد معرفی آن را دارید، سابقه ی علمی یا تاریخی 
+            جذابی داشته باشد.
+            <hr>
+            برای سفارش تبلیغات، لطفا از طریق راه های ارتباط برای ما پیام ارسال کنید. بهترین راه برای 
+            ارتباط پشتیبانان با ذره‌بین ارسال ایمیل است.
+        </p>
+    </h3>
+
+    <a href="#contact_sm" style="text-decoration: none; color: rgb(7, 54, 61);">
+        <div class="send-email">
+            ارتباط با ذره‌بین
+        </div>
+    </a>
+ 
+</div>
+<br><br>
+
+{% endblock content%}

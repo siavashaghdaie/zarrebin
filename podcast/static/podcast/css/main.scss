@@ -1,0 +1,936 @@
+
+.wrapper{
+    position:absolute;
+    margin:0;
+    padding:0;
+    top:0;
+    right:0;
+    display: grid;
+    background-color: darkcyan;
+    
+}
+
+.nav{
+    position:fixed;
+    width:100vw;
+    display: flex;
+    justify-content:space-between;
+    background-color: darkcyan;
+    right:0;
+    z-index: 11;
+    .menu_button{
+        position: relative;
+        width:60px;
+        border: solid rgba(0, 0, 0,0.3);
+        margin:2px;
+        border-radius: 50%;
+        display:block;
+        margin:10px;
+    
+    }
+    
+    .menu_close_button{
+        position: relative;
+        width:60px;
+        border: solid rgba(0, 0, 0,0.3);
+        margin:10px;
+        border-radius: 50%;
+        display:none;
+        z-index: 12;
+    
+    }
+
+    .logo{
+        position: relative;
+        width:60px;
+        height:auto;
+        border: solid rgba(0, 0, 0,0.3);
+        margin:10px;
+        border-radius: 50%;
+    
+    
+    }
+
+    .mobile_menu{
+        position: fixed;
+        background-color: rgba(6, 134, 134, 0.5);
+        backdrop-filter: blur(10px);
+        display:block;
+        visibility: hidden;
+        height: 100vh;
+        width:50vw;
+        z-index: 5;
+       
+
+        .menuitem{
+            padding:10px;
+            text-align: right;
+            position: relative;
+            font-size:x-large;
+            border-bottom: solid rgb(13, 39, 38);
+            color:wheat;
+            a{
+                text-decoration: none;  
+                color: antiquewhite; 
+            }
+            &:hover{
+                font-weight: bold;
+                transition:all 150ms;
+                transform:scale(1.01);
+                text-shadow: 3px 3px 3px black;
+                cursor:pointer
+            }
+            
+        
+        }
+
+
+    
+        
+    }
+
+    
+}
+
+
+//for login_register.html
+.login_from{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    background-color:rgba(36, 77, 77, 0.3);
+    display: grid;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+
+    input{
+        display: grid;
+        width:80vw;
+        font-size: x-large;
+    }
+    #submit{
+        width:20vw;
+        float: left;
+        background-color: rgb(46, 99, 197);
+        border-radius: 10px;
+        text-decoration: none;
+        
+    }
+    label{
+        color: bisque;
+        font-size: xx-large;
+        margin-bottom: 4px;
+    }
+
+}
+
+
+
+
+
+.wallpaper_sm{
+
+    position: fixed;
+    top:60px;
+    height:92vh;
+    z-index: 0;
+    display:none
+}
+
+.wallpaper_md{
+    position:fixed;
+    height: 100vh;
+    width:auto;
+    left:-250px;
+    display: block;
+}
+.wallpaper_lg{
+
+    display: none;
+}
+.pad{
+    position: fixed;
+    height:100vh;
+    width:100vw;
+    background-color: rgba(0, 0, 0,0.6);
+    backdrop-filter: blur(10px);
+    z-index: 9;
+    
+}
+    
+
+.last_episode {
+    margin-top:5vh;
+    position:relative;
+    background-color: rgba(43, 70, 73,0.8);
+    display:grid;
+    align-content: center;
+    
+    .edit-box{
+        position: absolute;
+        background-color: rgb(47, 101, 126);
+        border-radius: 10px;
+        z-index: 3;
+        top:30px;
+        right:30px;
+        width:80px;
+        text-align: center;
+        text-decoration: none;
+        color: wheat;
+        padding:20px 0px;
+
+    }
+    .delete-box{
+        position: absolute;
+        background-color: rgb(47, 101, 126);
+        border-radius: 10px;
+        z-index: 3;
+        top:100px;
+        right:30px;
+        width:80px;
+        text-align: center;
+        text-decoration: none;
+        color: wheat;
+        padding:20px 0px;
+
+    }
+    
+    .last_episode_image{
+        border-radius: 4%;
+        padding:5px;
+        position: relative;
+        width:97%;
+        display:inline-block;
+        
+    }
+    .new_badge{
+        
+        z-index: 2;
+        position: absolute;
+        width: 100px;
+        right:8%;
+        top:5%;
+        
+    }
+    #last_episode_listen{
+        
+        position: absolute;
+        text-align: center;
+        background-color: lightseagreen;
+        width:30%;
+        left:5px;
+        bottom: 3px;
+        border-radius: 8px;
+        &:hover{
+            transform: scale(1.01);
+            transition: all 150ms;
+            box-shadow: 3px 3px 3px black;
+        }
+
+    
+        
+       
+    }
+
+    #last_episode_des{
+        position: relative;
+        margin:5px;
+        margin-bottom: 8px;
+        padding: 20px;
+        background-color: rgb(245, 237, 223);
+        border-radius: 10px;
+        text-align: justify;
+        text-justify: initial;
+        height: 15vh;
+        scroll-behavior: auto;
+        
+    }
+
+    
+}   
+
+
+.best_episodes {
+    position:relative;
+    background-color: rgba(43, 70, 73,0.8);
+    display:grid;
+    justify-content: center;
+    background-color: tomato;
+    
+
+    #best_ep_title{
+        position: relative;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        padding: 10px;
+        background-color: rgba(43, 70, 73,1);
+        border-radius: 10px;
+        font-weight: bolder;
+        
+        color: wheat;
+        &:hover{
+            transition: all 150ms;
+            transform: scale(1.03);
+            box-shadow:5px 5px 5px black;
+        }
+    }
+
+    .best_ep{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        margin:20px 0;
+        border-radius: 20px;
+        overflow: hidden;
+        &:hover{
+            transition: all 150ms;
+            transform: scale(1.03);
+            box-shadow:5px 5px 5px black;
+        }
+
+        .best_ep_img{
+            position: relative;
+            width:35vw;
+            z-index: 5;
+        }
+        .best_ep_des{
+            color: wheat;
+            padding: 0px 20px;
+            position:relative;
+            background-color: rgba(20, 34, 36, 0.95);
+            display:grid;
+            justify-content: right;
+            text-align: right;
+            width:55vw;
+            font-size: large;
+        }
+        #best_ep_play_btn{
+            position:absolute;
+            width:20vw;
+            top:23%;
+            left:31%;
+            opacity: 0.8;
+            z-index: 5;
+          
+        }
+    }
+
+
+}
+
+.archive{
+    position:relative;
+    display:grid;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    .archive_title{
+        color: wheat;
+        text-align: center;
+        position: relative;
+        display:block;
+        margin:40px 20px;
+        padding:5px;
+        width:90vw;
+        background-color: rgb(235, 84, 58);
+        border-radius: 10px;
+        &:hover{
+            transition: all 150ms;
+            transform: scale(1.03);
+            box-shadow:5px 5px 5px rgb(70, 69, 69);
+        }
+
+    }
+    
+}
+
+
+
+
+.sp{
+    position: relative;
+    z-index: 3;
+    background-color:rgb(28, 99, 87);
+    justify-content: center;
+  
+    .sp_title{position: relative;
+        color: white;
+        text-align: center;
+        
+        width:90%;
+        right:5%;
+        border-radius: 10px;
+        &:hover{
+            transition: all 150ms;
+            transform: scale(1.03);
+            text-shadow:3px 3px 3px rgb(43, 42, 42);
+        }
+
+    }
+    .sp_wrapper{
+        .listener_sp{
+            position: relative;
+            text-align: center;
+            padding:1px;
+            background-color:rgb(171, 191, 228);
+            width:86%;
+            right:7%;
+            border-radius: 10px;
+            height:60px;
+            margin:3px;
+            margin-bottom: 10px;
+        }
+        .brand_sp{
+            position: relative;
+            text-align: center;
+            padding:1px;
+            background-color:rgb(171, 191, 228);
+            width:86%;
+            right:7%;
+            border-radius: 10px;
+            height:100px;
+            margin:3px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+
+.copy_right{
+    color:white;
+    padding: 20px;
+    position:relative;
+    background-color: rgba(20, 34, 36, 0.95);
+    display:grid;
+    justify-content: center;
+    text-align: justify;
+
+}
+
+.footer{
+    position:relative;
+    background-color: rgba(43, 70, 73,0.8);
+    display:grid;
+    justify-content: center;
+}
+
+
+.contact_sm{
+    
+    position: relative;
+    display: grid;
+    background-color: rgba(29, 148, 112,0.4);
+    backdrop-filter: blur(5px);
+    color: wheat;
+    backdrop-filter: blur(5px);
+    padding:20 px;
+
+    #contact_title{
+        position: relative;
+        padding: 30px; 
+        background-color: rgb(14, 88, 66);
+    }
+    
+
+    .social_med{
+        
+        position:relative;
+        padding:0 10px;
+        margin:20px ;
+        color: wheat;
+        .social_block{
+            padding: 10px;
+            justify-content: left;
+            border-bottom:solid  rgba(238, 215, 172,0.3);
+            position: relative;
+            display: flex;
+            .social_id{
+                position: relative;
+                padding:3px;
+                font-weight: bold;
+                top:5px;
+                left:2px;
+                background-color: rgba(23, 160, 137,0.2);
+                height: 25px;
+                font-size: large;
+                border-radius: 10px;
+            }
+
+            .sn{
+                position: relative;
+                width: 40px;
+                margin:20px, 0;
+                border-radius: 50%;
+                
+            }
+
+        }
+
+
+        
+    }
+}
+
+.contact_lg{
+    position: relative;
+    z-index: 2;
+    width:100%;
+    background-color: rgba(194, 36, 36, 0.6);
+    backdrop-filter: blur(10px);
+    display: grid;
+    justify-content: center;
+    #contact_slider{
+        position: relative;
+        display: block;
+        text-align: center;
+        width:90%;
+        border-radius: 10px;
+        right:5%;
+        margin:0;
+        margin-bottom: 0;
+        &:hover{
+            transition: all 150ms;
+            transform: scale(1.03);
+            text-shadow:3px 3px 3px rgb(43, 42, 42);
+        }
+    }
+
+    #contact_wrapper{
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        width:100vw;
+        z-index: 2;
+        margin-top:-25px;
+        #send_message{
+            color:whitesmoke;
+            margin-top:20px;
+            padding:15px;
+            width:100%;
+            background-color: rgba(158, 139, 139, 0.1);
+            border-radius: 10px;
+        
+            #form{
+              
+                position: relative;
+                width:100%;
+                #label{
+                    color:whitesmoke;
+                    margin-top:-60px;
+                }
+                #id_sender{
+                    display:grid;
+                    border-radius: 5px;
+                    width:50%;
+                    margin-bottom: 5px;
+            
+                }
+                #id_subject{
+                    display:grid;
+                    border-radius: 5px;
+                    width:50%;
+                    margin-bottom: 7px;
+                }
+                #id_message{
+                    width:98%;
+                    height:200px;
+                    border-radius: 7px;
+                    resize: none;
+                    font-size: larger;
+                    
+
+                }
+                #submit{
+
+                    background-color: #4CAF50;
+                    border: none;
+                    color: white;
+                    padding: 8px 16px;
+                    text-decoration: none;
+                    margin: 4px 2px;
+                    cursor: pointer;
+                    float:left;
+                }
+            }
+            
+        }
+        #contact_info{
+            display:none;
+
+            
+        }
+    }
+}
+
+//@media only screen and (min-width:720px, and max-height:400px){
+@media only screen and (max-height:420px){
+    body{
+        background-color: black;
+        padding:0;
+        margin:0;
+        align-content: center;
+    }
+
+    .container{
+       
+        width:100%;
+    }
+
+    .wallpaper_sm{
+        display: none;
+    }
+    .wallpaper_md{
+        display: block;
+        width:110vw;
+        height: auto;
+        position: fixed;
+        top:70px;
+        left:-70px;
+     
+    }
+
+    .nav{
+        .mobile_menu{
+            .enter-internal{
+                display: block;
+
+            }
+        
+        }
+
+    
+
+
+
+        
+    }
+
+   
+    
+    .last_episode{
+        width:40vw;
+        right:20px;
+        margin: 10vh 5vw;
+        padding:10px;
+        #last_episode_des{
+            padding:10px;
+           margin-bottom: 15px;
+           height:170px;
+        }
+
+        
+    }
+    .best_episodes{
+        #best_ep_title{
+            height:fit-content;
+        }
+        .best_ep{
+            .best_ep_img{
+                width:40vw;
+            }
+            .best_ep_des{
+                display:none;
+                font-size: xx-large;
+            }
+            #best_ep_play_btn{
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width:760px){
+    .left-menu{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width:760px){
+    body{
+        background-color: black;
+        padding:0;
+        margin:0;
+        align-content: center;
+    }
+
+    .container{
+       
+        width:100%;
+    }
+
+    .wallpaper_sm{
+        display: none;
+    }
+    .wallpaper_md{
+        display: block;
+        width:110vw;
+        height: auto;
+        position: fixed;
+        top:50px;
+        left:-70px;
+     
+    }
+
+   
+    
+    .last_episode{
+        width:40vw;
+        right:20px;
+        margin-top:20px;
+        margin-bottom: 20px;
+        padding:10px;
+
+        #last_episode_des{
+            padding:5px 10px;
+            height:100px;
+            margin-bottom: 15px;
+            
+
+        }
+        #last_episode_listen{
+            
+            padding:0px;
+            margin:0;
+            height:30px;
+        }
+
+        
+    }
+    .best_episodes{
+        margin-top:100px;
+        display:flex;
+        justify-content: space-between;
+        width:100%;
+        
+       
+        #best_ep_title{
+            position: absolute;
+            font-size: xx-large;
+            height:50px;
+            width:90vw;
+            right:5vw;
+            top:10px;
+            
+        }
+        .best_ep{
+            background-color: rgb(235, 84, 58);
+            margin-top:150px;
+            padding:10px;
+            width:30vw;
+            display:grid;
+            .best_ep_img{
+                width:100%;
+                order:-1;
+                border-radius: 10px;
+            }
+            .best_ep_des{
+                
+                width:100%;
+                border-radius: 0 0 10px 10px;
+                order:1;
+                display:none
+                
+                    
+            }
+        
+            #best_ep_play_btn{
+                width:20%;
+                right:30%;
+                top:35%;
+            }
+        }
+    }
+
+    .nav{
+        height: 50px;;
+        display:flex;
+        justify-content: space-between;
+        margin:0;
+        padding: 0;
+        .menu_button{
+            display: none;
+        }
+        .logo{
+            display: none;
+        }
+
+        .mobile_menu{
+            position: relative;
+            display: inline-block;
+            visibility: visible;
+            display: flex;
+            
+            width:100vw;
+            height:35px;;
+            top:5px;
+            background-color: rgba(187, 89, 89,0);
+            margin:0;
+            padding:0;
+
+            .menuitem{
+                font-size: smaller;
+                font-weight: lighter;
+                border-bottom: none;
+                height:30px;
+                
+                margin:5px;
+                padding:5px 15px;
+                padding-bottom: 0;
+                //background-color: violet;
+                
+            }
+            .enter-internal{
+                display:none;
+            }
+            .enter{
+                background-color: darkslategray;
+                border-radius: 3px;
+            }
+            
+        }
+        .left-menu{
+            position: relative;
+            justify-content: left;
+            margin-top:10px;
+            margin-left: 2%;
+            padding:8px;
+            border-radius: 6px;
+            background-color: darkslategray;
+            margin-bottom: 1%;
+            align-content: center;
+            justify-content: center;
+            .enter{
+                position: relative;
+                top:-10px;
+                a{
+                    text-decoration: none;  
+                    color: antiquewhite; 
+                }
+                
+                
+            }
+            
+        }
+    
+    
+
+
+    }
+
+    .archive{
+        .archive_title{
+            width:95vw;
+            margin: 60px 0;
+            font:bold;
+        }
+    }
+
+    .contact_sm{
+        .social_med{
+           display: grid;
+            grid-template-columns: 33% 33% 33%; 
+            justify-content: left; 
+            .social_block{
+                border:none;
+            }
+        }
+              
+    }
+    .contact_lg{
+        position: relative;
+        z-index: 2;
+        width:100%;
+        background-color: rgba(194, 36, 36, 0.6);
+        backdrop-filter: blur(10px);
+        display: grid;
+        justify-content: center;
+        #contact_slider{
+            position: relative;
+            display: block;
+            text-align: center;
+            width:90%;
+            border-radius: 10px;
+            right:5%;
+            margin:0;
+            margin-bottom: 0;
+        }
+
+        #contact_wrapper{
+            position: relative;
+            display: flex;
+            justify-content: space-around;
+            width:100vw;
+            z-index: 2;
+            margin-top:5px;
+            #send_message{
+                color:whitesmoke;
+                margin:10px;
+                padding:15px;
+                width:60%;
+                background-color: rgba(158, 139, 139, 0.1);
+                border-radius: 10px;
+                #form{
+                    position: relative;
+                    width:100%;
+                    #label{
+                        color:whitesmoke;
+                        margin-top:-60px;
+                    }
+                    #one_line_txt{
+                        border-radius: 5px;
+                        width:50%
+                    }
+                    #message_txt{
+                        width:98%;
+                        height:200px;
+                        border-radius: 5px;
+                        resize: none;
+
+                    }
+                    #submit{
+
+                        background-color: #4CAF50;
+                        border: none;
+                        color: white;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                        margin: 4px 2px;
+                        cursor: pointer;
+                        float:left;
+                    }
+                }
+                
+            }
+            #contact_info{
+                overflow:scroll;
+                display: block;
+                border-radius: 10px;
+                margin:10px;
+                padding:15px;
+                width:40%;
+                background-color: rgba(158, 139, 139, 0.1);
+                
+            }
+        }
+    }
+
+    .episode_container{
+        background-color: rgba(57, 161, 168, 0.1);
+        justify-content: space-around;
+        padding:3%;
+        position: relative;
+        display:grid;
+        grid-template-columns: 50% 50%;
+        width:90%;
+        margin-right:2%;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+    }
+}
+
+
+

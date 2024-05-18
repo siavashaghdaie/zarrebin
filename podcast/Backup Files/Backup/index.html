@@ -1,0 +1,156 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static 'podcast/css/bootstrap.css'%}" />
+    <link rel="stylesheet" href="{%static 'podcast/css/fontawesome.css'%}" />
+    <link rel="stylesheet" href="{%static 'podcast/css/index.css'%}" />
+  </head>
+
+  <style>
+      @font-face {
+          font-family: IRANSansWebFaNum;
+          src: url("{%static 'podcast/webfonts/IRANSansWebFaNum.ttf'%}");
+      }
+      *{
+          font-family: IRANSansWebFaNum;
+      }
+  </style>
+
+  <body dir="rtl">
+    <div class="container">
+
+        <div class="navbar">
+
+            <img class="menu_button" src="{%static 'podcast/images/menu-black.svg'%}" >
+            <img  class="logo" src="{%static 'podcast/images/logo.jpg'%}">
+
+        </div>
+
+        <div class="mobile_menu">
+
+            <img class="mobile_menu_close" src="{%static 'podcast/images/Cross1.png'%}">
+            <br>
+            
+            <div class="menuitem">
+                نخستین صفحه
+            </div>
+
+            <div class="menuitem">
+                آرشیو
+            </div>
+
+            <div class="menuitem">
+                مقالات
+            </div>
+
+            <div class="menuitem">
+                پشتیبانی مالی
+            </div>
+
+            <div class="menuitem">
+                ارتباط با ما
+            </div>
+
+            <div class="menuitem">
+                آشنایی با گروه
+            </div>
+        </div>
+
+        
+        <img class="wallpaper" src="{%static 'podcast/images/mag01.jpeg'%}" alt="">
+
+        <div class="free">
+
+        </div>
+        
+        <div class="division last_episode">
+            <img class="new_badge" src="{%static 'podcast/images/new1.png'%}" alt="">
+            <img class="last_episode_image" src="{%static 'podcast/images/zartosht.jpg'%}" alt="">
+            <div id="last_episode_des">
+                <p>
+                    در این اپیزود راجع به زرتشت 
+                    می شنوید، پیامبری که آیین زندگی را بر مبنای کرداد گفتار نیک، 
+                    کردار نیک، و پندار نیک به مردمش آموخت.
+                </p>
+            </div>
+            <div id="last_episode_listen">
+                <h2>بشنوید</h2>
+            </div>
+        </div>
+
+
+        <div class="division">
+            <img class="wave_img" src="{%static 'podcast/images/wave2.jpeg'%}" alt="">
+            <img class="logo_division" src="{%static 'podcast/images/logo.jpg'%}" alt="">
+            <div class="div_btn">
+                <h2>آرشیو</h2>
+            </div>
+
+
+
+        </div>
+
+        <!---
+        <div class="division archive">
+            <img class="archive_image" src="{%static 'podcast/images/archive5.jpeg'%}" alt="">
+
+
+            <div class="div_btn">
+                <h2>آرشیو</h2>
+            </div>
+        </div>
+
+        <div class="division archive">
+            <img class="archive_image" src="{%static 'podcast/images/archive2.jpeg'%}" alt="">
+
+
+            <div class="div_btn">
+                <h2>آرشیو</h2>
+            </div>
+        </div>
+
+        --->
+
+        <div class="division spons">
+            <img class="spons_img" src="{%static 'podcast/images/don1.png'%}" alt="">
+
+            <div id="spons_btn">
+                <h2>از ذره بین حمایت کنید</h2>
+            </div>
+
+
+        </div>
+
+        <div class="copy_right">
+            برای شنیدن ذره بین لازم نیست پولی پرداخت کنید. این پادکست
+            رایگانه و همیشه هم رایگان خواهد بود. اما اگر خواستین از حاصل پژوهش های گروه، 
+            یا بخش هایی از برنامه استفاده ی تجاری یا رسانه ای بکنین، 
+            حتما لازمه که قبلش با ما صحبت کنین و اجازه بگیرین.
+        </div>
+        <div class="spacer">
+            <img class="sn" src="{%static 'podcast/images/insta.png'%}" alt="">
+            <img class="sn" src="{%static 'podcast/images/twitter.png'%}" alt="">
+            <img class="sn" src="{%static 'podcast/images/whatsapp.png'%}" alt="">
+        </div>
+        <div class="footer">
+            Copyright © 2021 ZC Inc. All rights reserved.
+        </div>
+
+
+    
+
+    </div>
+
+    
+
+    <script src="{%static 'podcast/js/jquery-3.6.0.min.js'%}"></script>
+    <script src="{%static 'podcast/js/bootstrap.bundle.js'%}"></script>
+    <script src="{%static 'podcast/js/fontawesome.js'%}"></script>
+    <script src="{%static 'podcast/js/index.js'%}"></script>
+  </body>
+</html>

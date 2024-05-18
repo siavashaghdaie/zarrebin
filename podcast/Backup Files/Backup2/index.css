@@ -1,0 +1,338 @@
+.container {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: -ms-grid;
+  display: grid;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: darkcyan;
+  z-index: 11;
+}
+
+.menu_button {
+  position: relative;
+  width: 60px;
+  border: solid rgba(0, 0, 0, 0.3);
+  margin: 2px;
+  border-radius: 50%;
+  display: block;
+}
+
+.menu_close_button {
+  position: relative;
+  width: 60px;
+  border: solid rgba(0, 0, 0, 0.3);
+  margin: 2px;
+  border-radius: 50%;
+  display: none;
+}
+
+.logo {
+  position: relative;
+  width: 60px;
+  height: auto;
+  border: solid rgba(0, 0, 0, 0.3);
+  margin: 2px;
+  border-radius: 50%;
+}
+
+.mobile_menu {
+  position: fixed;
+  background-color: rgba(6, 134, 134, 0.4);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  display: block;
+  visibility: hidden;
+  height: 100vh;
+  width: 50vw;
+  z-index: 10;
+}
+
+.mobile_menu :hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #4b2a2a;
+  background-color: burlywood;
+}
+
+.menuitem {
+  padding: 10px;
+  text-align: right;
+  position: relative;
+  font-size: x-large;
+  border-bottom: solid black;
+}
+
+.wallpaper_sm {
+  position: fixed;
+  top: 60px;
+  height: 92vh;
+  z-index: 0;
+}
+
+.wallpaper_md {
+  display: none;
+}
+
+.wallpaper_lg {
+  display: none;
+}
+
+.pad {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  z-index: 9;
+}
+
+.free {
+  position: relative;
+  height: 55vh;
+}
+
+.last_episode {
+  position: relative;
+  background-color: rgba(43, 70, 73, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.last_episode .last_episode_image {
+  border-radius: 4%;
+  padding: 5px;
+  position: relative;
+  width: 100vw;
+  display: inline-block;
+}
+
+.last_episode .new_badge {
+  z-index: 2;
+  position: absolute;
+  width: 200px;
+  right: 20px;
+  top: -70px;
+}
+
+.last_episode #last_episode_listen {
+  position: absolute;
+  text-align: center;
+  background-color: lightseagreen;
+  width: 30%;
+  left: 5px;
+  bottom: 3px;
+  border-radius: 8px;
+}
+
+.last_episode #last_episode_des {
+  position: relative;
+  margin: 5px;
+  margin-bottom: 8px;
+  padding: 20px;
+  background-color: #f5eddf;
+  border-radius: 10px;
+  text-align: justify;
+  text-justify: initial;
+  height: 15vh;
+  scroll-behavior: auto;
+}
+
+.best_episodes {
+  position: relative;
+  background-color: rgba(43, 70, 73, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: tomato;
+}
+
+.best_episodes #best_ep_title {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #2b4649;
+  border-radius: 10px;
+  font-weight: bolder;
+  color: wheat;
+}
+
+.best_episodes .best_ep {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 10px 0;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.best_episodes .best_ep .best_ep_img {
+  position: relative;
+  width: 35vw;
+  z-index: 5;
+}
+
+.best_episodes .best_ep .best_ep_des {
+  color: wheat;
+  padding: 20px;
+  position: relative;
+  background-color: rgba(20, 34, 36, 0.95);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  text-align: right;
+  width: 55vw;
+}
+
+.best_episodes .best_ep #best_ep_play_btn {
+  position: absolute;
+  width: 20vw;
+  top: 23%;
+  left: 31%;
+  opacity: 0.8;
+  z-index: 5;
+}
+
+.archive {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.archive .archive_title {
+  color: wheat;
+  text-align: center;
+  position: relative;
+  display: block;
+  margin: 30px 10px;
+  padding: 5px;
+  width: 90vw;
+  background-color: #eb543a;
+  border-radius: 10px;
+}
+
+.spons {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.spons #spons_img {
+  position: relative;
+  width: 95vw;
+  padding: 5px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.spons #spons_slide_btn {
+  color: wheat;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  background-color: rgba(35, 61, 65, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  font-weight: bolder;
+  border-radius: 10px;
+  bottom: 25px;
+  width: 60%;
+  right: 20%;
+  border-radius: 510px;
+}
+
+.copy_right {
+  color: white;
+  padding: 20px;
+  position: relative;
+  background-color: rgba(20, 34, 36, 0.95);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+}
+
+.footer {
+  position: relative;
+  background-color: rgba(43, 70, 73, 0.8);
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.contact .social_med {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 10px;
+  margin: 20px;
+}
+
+.contact .social_med .sn {
+  position: relative;
+  width: 15%;
+  margin: 20px, 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .wallpaper_sm {
+    display: none;
+  }
+  .wallpaper_md {
+    display: block;
+    width: 100vw;
+    position: fixed;
+  }
+}
+/*# sourceMappingURL=index.css.map */

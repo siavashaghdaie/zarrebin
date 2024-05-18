@@ -1,0 +1,31 @@
+{%extends '../podcast/main.html'%}
+{%load static%}
+
+<style>
+    
+
+</style>
+
+{%block content%}
+{%for i in podcaster%}
+
+<div class="best_episodes">
+  <div id="best_ep_title">اعضای گروه</div>
+  <div class="best_ep">
+    <div class="best_ep_des">
+      <h3>{{i.firstName}} {{i.lastName}}</h3>
+      <h5>{{i.position}}</h5>
+      {{i.pic}}
+    </div>
+    <img
+      class="best_ep_img"
+      src="{%static 'podcast/images/drakula.jpg'%}"
+      alt=""
+    />
+
+  </div>
+
+
+</div>
+
+{%endfor%} {%endblock content%}

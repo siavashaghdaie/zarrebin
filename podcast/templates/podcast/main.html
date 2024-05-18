@@ -1,0 +1,259 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zarrebin</title>
+
+    <link rel="stylesheet" href="{%static 'podcast/css/main.css'%}" />
+  </head>
+
+  <style>
+      @font-face {
+          font-family: IRANSansWebFaNum;
+          src: url("{%static 'podcast/webfonts/IRANSansWebFaNum.ttf'%}");
+      }
+      *{
+          font-family: IRANSansWebFaNum;
+      }
+  </style>
+
+  <body dir="rtl">
+
+    <div class="wrapper">
+
+        <div class="nav">
+
+            <div class="mobile_menu">
+
+                <br><br><br>
+
+                <div class="menuitem enter-internal">
+                    {% if request.user.is_authenticated %}
+                        <a href="{%url 'logout'%}"> خروج </a> 
+                    {%else%}
+                        <a href="{%url 'login'%}"> ورود </a> 
+                    {%endif%}
+                </div>
+
+                
+                <a href="{%url 'index'%}" style="text-decoration: none; color:wheat">
+                    <div class="menuitem">
+                        خانه
+                    </div>
+                </a>
+                
+                <a href="{%url 'archive'%}" style="text-decoration: none; color:wheat">
+                    <div class="menuitem">
+                        آرشیو
+                    </div>
+                </a>
+    
+                <a href="#sp" style="text-decoration: none; color:wheat">
+                    <div class="menuitem menu-sp" >
+                        پشتیبانی مالی
+                    </div>
+                </a>
+
+                <a href="#contact_sm" style="text-decoration: none; color:wheat">
+                    <div class="menuitem">
+                        ارتباط با ما
+                    </div>
+                </a>
+    
+
+                <a href="{% url 'team' %}" style="text-decoration: none; color:wheat">
+                    <div class="menuitem">
+                        آشنایی با گروه
+                    </div>
+                </a>
+
+                <a href="{%url 'index' %}" style="text-decoration: none; color:wheat">
+                    <div class="menuitem " id="menu-message">
+                        پیامگیر  
+                    </div>
+                </a>
+                
+            </div>
+
+
+            
+            <div class="left-menu">
+                
+                     
+                
+                <div class="enter">
+                    {% if request.user.is_authenticated %}
+                        <a href="{%url 'logout'%}"> خروج </a> 
+                    {%else%}
+                        <a href="{%url 'login'%}"> ورود </a> 
+                    {%endif%}
+                    
+                </div>
+            </div>
+            
+            <img class="menu_button" src="{%static 'podcast/images/menu-black.png'%}" >
+            <img class="menu_close_button" src="{%static 'podcast/images/menu-black.png'%}" >
+            <img  class="logo" src="{%static 'podcast/images/logo.jpg'%}">
+
+
+        </div>
+
+        
+
+        
+        <img class="wallpaper_sm" src="{%static 'podcast/images/mag01.jpeg'%}" alt="">
+        <img class="wallpaper_md" src="{%static 'podcast/images/mag3.jpeg'%}" alt="">
+        <img class="wallpaper_lg" src="{%static 'podcast/images/mag1.jpeg'%}" alt="">
+
+        <div class="pad">
+        
+        </div>
+
+
+        {%block content%}
+
+        {%endblock content%}
+
+
+
+
+
+        <div class="sp" id="sp">
+            <div class="sp_title">
+                <h1>
+                    حمایت از ذره‌بین‌
+                </h1>
+            </div>
+            <div class="sp_wrapper">
+                <div class="listener_sp">
+                    <a href="https://hamibash.com/zarrebincast" style="text-decoration: none; color: rgb(7, 54, 61);">
+                        <h3>
+                            به عنوان شنونده حمایت می کنم
+    
+                        </h3>
+                    </a>
+                </div>
+                    
+                <div class="brand_sp">
+
+                    <a href="{% url 'sp' %}" style="text-decoration: none; color: rgb(7, 54, 61);">
+                        <h3>
+                            به عنوان صاحب کسب و کار 
+                            <br>
+                            حمایت می کنم
+                        </h3> 
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        
+       
+        
+        <div class="copy_right">
+            برای شنیدن ذره بین لازم نیست پولی پرداخت کنید. این پادکست
+            رایگانه و همیشه هم رایگان خواهد بود. اما اگر خواستین از حاصل پژوهش های گروه، 
+            یا بخش هایی از برنامه استفاده ی تجاری یا رسانه ای بکنین، 
+            حتما لازمه که قبلش با ما صحبت کنین و اجازه بگیرین.
+        </div>
+
+
+        
+        <div class="contact_sm" id="contact_sm">
+            <div id="contact_title">    
+                <h2>ارتباط با ما:</h2>    
+            </div>
+            <div class="social_med">
+                
+                <a href="https://www.instagram.com/zarrebincast/" style="text-decoration: none; color:wheat">
+                    
+                    <div class="social_block">
+                        <div class="social_id">
+                        ZARREBINCAST 
+                        </div>
+                        <div>
+                        <img class="sn" src="{%static 'podcast/images/insta-icon.png'%}" alt=""> 
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://t.me/zarrebincast" style="text-decoration: none; color:wheat">
+                    <div class="social_block">
+                        <div class="social_id">
+                        ZARREBINCAST 
+                        </div>
+                        <div>
+                        <img class="sn" src="{%static 'podcast/images/telegram-icon.png'%}" alt=""> 
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/zarrebincast" style="text-decoration: none; color:wheat">
+                    <div class="social_block">
+                        <div class="social_id">
+                        ZARREBINCAST 
+                        </div>
+                        <div>
+                        <img class="sn" src="{%static 'podcast/images/twitter-icon.png'%}" alt=""> 
+                        </div>
+                    </div>
+                </a>
+
+                <a href="" style="text-decoration: none; color:wheat">
+                    <div class="social_block">
+                        <div class="social_id">
+                        ZARREBINCAST@GMAIL.COM 
+                        </div>
+                        <div>
+                        <img class="sn" src="{%static 'podcast/images/gmail-icon.png'%}" alt=""> 
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://castbox.fm/channel/%D8%B0%D8%B1%D9%87-%D8%A8%DB%8C%D9%86-id4497829?country=us" style="text-decoration: none; color:wheat">
+                    <div class="social_block">
+                        <div class="social_id">
+                        ZARREBINCAST
+                        </div>
+                        <div>
+                        <img class="sn" src="{%static 'podcast/images/castbox-icon.png'%}" alt=""> 
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://castbox.fm/channel/%D8%B0%D8%B1%D9%87-%D8%A8%DB%8C%D9%86-id4497829?country=us" style="text-decoration: none; color:wheat">
+                    <div class="social_block">
+                        <div class="social_id">
+                        ZARREBINCAST.COM
+                        </div>
+                        <div>
+                        <img class="sn" src="{%static 'podcast/images/zarrebin-icon.png'%}" alt=""> 
+                        </div>
+                    </div>
+                </a>
+
+
+
+            </div>
+        </div>
+
+        <div class="footer">
+            Copyright © 2021 ZC Inc. All rights reserved.
+        </div>
+
+        
+
+
+    
+
+    </div>
+
+    
+
+    <script src="{%static 'podcast/js/jquery-3.6.0.min.js'%}"></script>
+    <script src="{%static 'podcast/js/index.js'%}"></script>
+  </body>
+</html>

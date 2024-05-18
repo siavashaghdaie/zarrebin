@@ -1,0 +1,87 @@
+{%extends 'podcast/main.html'%}
+{%load static%}
+
+{% block content%}
+<br><br><br><br>
+
+<style>
+    .form-container{
+        position: relative;
+        z-index: 1;
+        background-color: rgba(143, 208, 228,0.6);
+        margin:20px;
+        padding :20px;
+        border-radius: 10px;
+
+    }
+    .form{
+        display:grid;
+        
+    }
+    input{
+        position:relative;
+        display:grid;
+        width:98%;
+    }
+    textarea{
+        position:relative;
+        display:grid;
+        width:98%;
+    }
+    
+
+    
+</style>
+
+
+<div>
+    <div class="episode_container">
+        {%for podcast in podcasts%}
+            <div class="last_episode">
+                <div class="episode">
+                    {% if request.user.is_authenticated %}
+                        <!img class="new_badge" src="{%static 'podcast/images/edit.png'%}" alt="">
+                        <a href="{% url 'podcast-edit' podcast.id %}">
+                            <div class="edit-box">
+                                ویرایش
+                            </div>
+                        </a>
+                        <a href="{% url 'podcast-delete' podcast.id %}">
+                            <div class="delete-box">
+                                حذف
+                            </div>
+                        </a>
+                    {% endif %}
+                    <img class="last_episode_image" src="{{podcast.pic.url}}" alt="">
+                    <div id="last_episode_des">
+                        <p>
+                            {{podcast.description}}
+                        </p>
+
+                        <a href="{{podcast.castboxlink}}" style="text-decoration: none; color:wheat">
+                            <div id="last_episode_listen">
+                                بشنوید
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        {%endfor%}
+    </div>
+
+    {% if request.user.is_authenticated %}
+        <div class="archive">
+            <a href="{%url 'podcast-form'%}" style="text-decoration: none; color:wheat">
+                <div class="archive_title">
+                    <h3> افزودن پادکست </h3>
+                </div>     
+            </a>
+        </div>
+    {% endif %}
+
+
+</div>
+
+
+{%endblock content%}
